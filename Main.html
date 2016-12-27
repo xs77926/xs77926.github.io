@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!--主界面-->
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的引导页</title>
+</head>
+<body background="Image/bg.jpg" >
+<!--适配手机网页开始-->
+<script>
+    function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+    }
+    browserRedirect();
+</script>
+<!--适配手机网页结束-->
+
+<address style="float:right">
+    作者 <a href="www.happinessuccess.com">框比篮球大</a>.<br>
+    签名 : 但使龙城飞将在 不教胡马度阴山<br>
+    CHINA
+</address>
+
+<p style="float: right;margin-right: 100px">
+    <a href="SumUp.html">总结</a>
+    <a href="https://www.baidu.com">百度</a>
+    <a href="https://v.qq.com">腾讯视频</a>
+    <a href="http://www.12306.cn/mormhweb/">12306订票</a>
+    <a href="MySong.html">我的歌单</a>
+
+</p>
+
+<center>
+    <font size="6" color="#a52a2a" >My Dream </font>
+    <font size="5" color="#a52a2a">Is To </font>
+    <font size="6" color="#a52a2a">Beyond A Li </font>
+</center>
+
+<!--线 <hr/>-->
+<!--线结束-->
+
+<!--换行  <br>-->
+<br><br><br>
+
+
+
+<!--线 <hr/>-->
+<hr/>
+<!--线结束-->
+
+
+<br><br><br>
+
+<!--<font color="#ff7f50" size="6" style="margin-left: 10px">我的女神</font>-->
+
+<a href="Video.html">我的视频</a><br>
+
+<h3 id="center">我的视频</h3>
+
+<br><br><br>
+
+<!-- img 重要属性, src是路径,  高度宽度全部指定会变形,指定其中的一个维度,另一个就会自动适应
+    alt 是图片显示不出来的时候默认的图片, title 是鼠标指针在图片上的提示文字 ,
+-->
+<!--<img src="Image/nvshen.jpg" width="360" style="margin-left: 50px" alt="女神" title="这是我的女神">-->
+<!--<img src="a.jpg" width="270" height="300" style="margin-left: 100px" alt="男神">-->
+
+
+</body>
+</html>

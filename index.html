@@ -1,35 +1,76 @@
+<html>
 <!DOCTYPE html>
-<html lang="en">
+
+
+<!--登陆界面-->
+
+
+<html lang="en" class="no-js">
+<a href="Main.html">登陆</a>
 <head>
-    <meta charset="UTF-8">
-    <title>第二天</title>
-    <base target="_blank">
+    <meta charset="utf-8">
+    <title>登录(Login)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/supersized.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5.js"></script>
+    <![endif]-->
+
 </head>
+
 <body>
-<center><h1 id="toc_0" style="color: coral">html 总结</h1></center>
+<!--适配手机网页开始-->
+<script>
+    function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
 
-<center><h2 id="toc_1" style="color: crimson">标签总结</h2></center>
-<a href="https://www.baidu.com" >百度</a><br>
-<a href="https://www.baidu.com"  title="跳转新的选项卡"><img src="Image/a.jpg" width="135"></a><br><br><br>
+    }
+    browserRedirect();
+</script>
+<!--适配手机网页结束-->
 
+<div class="page-container">
+    <h1>登录(Login)</h1>
+    <form action="" method="post">
+        <input type="text" name="username" class="username" placeholder="请输入您的用户名！">
+        <input type="password" name="password" class="password" placeholder="请输入您的用户密码！">
+        <!-- <input type="Captcha" class="Captcha" name="Captcha" placeholder="请输入验证码！"> -->
+        <button type="submit" class="submit_button">登录</button>
+        <div class="error"><span>+</span></div>
+    </form>
+    <div class="connect">
+        <!-- <p>快捷</p>
+        <p>
+            <a class="facebook" href=""></a>
+            <a class="twitter" href=""></a>
+        </p> -->
+    </div>
+</div>
 
-<h3>a 标签 : 用于界面间的跳转</h3><br>
-<h3>a标签的使用 : 主要是就是一个 href 属性,这个属性就是你要连接到的网址,地址,然后后面跟着你要显示的字,<br>
-    如果想用图片连接,那个a 标签里面包裹一个 img 标签就行,</h3>
-<p>
-<h3>
-    a 标签的 target 属性: 这个属性就是用于界面间跳转时,是跳转到新的选项卡还是当前的选项卡<br>
-    _self 是当前的选项卡<br>
-    _blank 是新的选项卡
-</h3>
-<h3>
-    a 标签的 title 属性  ,就是鼠标悬浮时的文字提示
-</h3>
-<h3>base 标签  :   用于当前网页中多有的a 标签的跳转方式, 简单化代码,不用每个 a 标签都指定 target <br>
-    注意  :  base 标签一定要写在 head 标签中 .
-</h3>
-<h3>加链接</h3>
-</p>
+<!-- Javascript -->
+<script src="assets/js/jquery-1.8.2.min.js" ></script>
+<script src="assets/js/supersized.3.2.7.min.js" ></script>
+<script src="assets/js/supersized-init.js" ></script>
+<script src="assets/js/scripts.js" ></script>
 
 </body>
+<div style="text-align:center;">
+</div>
 </html>
+
